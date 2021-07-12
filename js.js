@@ -1,9 +1,3 @@
-let numberOfFilms;
-
-
-
-start();
-
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -49,9 +43,18 @@ const personalMovieDB = {
         }
     },
     writeYourGenres = function (){
+        let genres = prompt(` Ваш любимий жанр. ВВедите через запьятую`);
+        
+        if (genres == '' || genres == null){
+            console.log('Вы ввели некорретные данные или не вели их вовсе')
+        } else{
+            personalMovieDB.genres.split(', ');
+            personalMovieDB.genres.s
+        }
         for( let i = 1; i < 3; i++){
             personalMovieDB.genres[i - 1] = prompt(`Ваш любимий жанр под номером ${i} `);
         }
+
     }
 };
 
